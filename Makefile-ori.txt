@@ -1,0 +1,19 @@
+all: crackvim
+
+pkzip_crypto.o: pkzip_crypto.c pkzip_crypto.h
+	gcc -Wall -c -o $@ $<
+
+crackvim.o: crackvim.c crc32.h pkzip_crypto.h
+	gcc -Wall -g -c -o $@ $<
+
+crc32.o: crc32.c
+	gcc -Wall -c -o $@ $<
+
+crackvim: crackvim.o crc32.o pkzip_crypto.o
+	gcc -Wall -g -o $@ $^
+
+.PHONY: clean
+
+clean:
+	del *.o
+	del crackvim.exe
