@@ -40,7 +40,7 @@ jobs:
           projectName: 'crackvim-win'
           branchName: 'trunk'
           ticsViewerUrl: 'http://192.168.1.146:42506/tiobeweb/TICS'
-          ticsAuthToken: 'OTdkZTljOGYtYWJmZi00Y2I2LWE3YjUtM2E1NjhhODhhYjU3OjJ5MWlva3Y9RjsocSFaMw'
+          ticsAuthToken: 'NGU1MTA5NzQtMjYzZC00ZDkyLTliYzEtZDMyY2IyNGJhYTQ4Omoibi9MajR6em5DMX4jOA'
           clientToken: 'crackvim'
           tmpDir: 'C:/BitBucket/RobotFramework/tmp/26652/plugin'
           calc: 'CS,CW'
