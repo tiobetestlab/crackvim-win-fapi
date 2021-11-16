@@ -1,5 +1,5 @@
 CC = gcc
-CCFLAGS = -Wall -fextended-identifiers
+CCFLAGS = -Wall
 
 all: crackvim
 
