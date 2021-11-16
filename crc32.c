@@ -14,6 +14,7 @@ void make_crc_table(void)
 {
 	unsigned long c;
 	int n, k;
+	int i;
 	for (n = 0; n < 256; n++) {
 		c = (unsigned long) n;
 		for (k = 0; k < 8; k++) {
