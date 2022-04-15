@@ -61,7 +61,7 @@ void load_file(char *filename, uint8_t **filedata, long *filesize){
 
 int inc_password(char *password, int max_len, int charset){
 	int carry;
-
+	int extra_variable;
 	carry = 1;
 
 	while(carry && 0 <= max_len){
@@ -240,7 +240,6 @@ int main(int argc, char *argv[]){
 	char *dict_filename;
 	FILE *dict = NULL;
 	int nbytes = 128;
-	double velocity;
 
 	if(argc < 2){
 		help();
