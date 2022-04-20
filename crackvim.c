@@ -60,9 +60,7 @@ void load_file(char *filename, uint8_t **filedata, long *filesize){
 
 
 int inc_password(char *password, int max_len, int charset){
-	int carry;
-
-	carry = 1;
+	int carry = 1;
 
 	while(carry && 0 <= max_len){
 		if(charset == 0){
